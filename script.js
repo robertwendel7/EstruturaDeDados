@@ -82,14 +82,16 @@ function clickEnqueue(){
     console.log(pq.peek())
 }
 function clickDeQueue(){
-    console.log(pq.dequeue())
+    let resultado = pq.dequeue()
+   
+    document.getElementById("resultado").innerHTML = resultado
+    
 }
 function clickPeek(){
     console.log(pq.peek())
 }
+pq.enqueue("Jo", "verde")
+pq.enqueue("Jano", "vermelho")
+pq.enqueue("Juan", "amarelo")
 
-// pq.enqueue("Jo", "verde")
-// pq.enqueue("Jano", "vermelho")
-// pq.enqueue("Juan", "amarelo")
-
-// console.log(pq.peek())
+//  console.log(pq.peek())

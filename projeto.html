@@ -8,14 +8,26 @@
 </head>
 <body>
 
+<div class="container">
 
-    <input type="text" id="nomePaciente" placeholder="Digite seu nome">
-    <input type="text" id="prioridade" placeholder="Digite sua prioridade">
+    <h1>Fila de hospital</h1>
 
-    <button type="submit" onclick="clickEnqueue()">Entrar na fila</button>
-    <button type="submit" onclick="clickDeQueue()">Atendimento</button>
-    <button type="submit" onclick="clickPeek()">Próximo paciente</button>
+    <input type="text" id="nomePaciente" placeholder="Nome do paciente">
+    <input type="text" id="prioridade" placeholder="Prioridade do paciente">
     
+    
+    
+    <button type="submit" onclick="clickEnqueue()">Entrar na fila</button>
+    
+    <a href="atendimento.html">
+        <button type="submit"">Atendimento</button>
+    </a>
+
+    <a href="pxmPaciente.html">
+    <button type="submit">Próximo paciente</button>
+    </a>
+    
+</div>
     <script src="script.js"></script>
 </body>
 </html>
