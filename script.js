@@ -15,13 +15,17 @@ class PriorityQueue {
 
         if (newNode.priority == "vermelho"){
             newNode.priority = 3
+            
         }
         else if (newNode.priority == "amarelo"){
             newNode.priority = 2
+            
         }
         else if (newNode.priority == "verde"){
             newNode.priority = 1
-        } else{
+            
+        } 
+        else{
             "Erro, a prioridade deve ser vermelho, amarelo ou verde"
         }
         if (this.isEmpty()) {
@@ -82,13 +86,16 @@ function clickEnqueue(){
     console.log(pq.peek())
 }
 function clickDeQueue(){
+    
     let resultado = pq.dequeue()
    
-    document.getElementById("resultado").innerHTML = resultado
+    document.getElementById("resultado").innerHTML = resultado.value
     
 }
 function clickPeek(){
-    console.log(pq.peek())
+    let resultado = pq.peek()
+   
+    document.getElementById("resultado").innerHTML = resultado.value
 }
 pq.enqueue("Jo", "verde")
 pq.enqueue("Jano", "vermelho")
