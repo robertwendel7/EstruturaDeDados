@@ -97,8 +97,10 @@ function clickPeek(){
    
     document.getElementById("resultado").innerHTML = resultado.value
 }
-pq.enqueue("Jo", "verde")
-pq.enqueue("Jano", "vermelho")
+pq.enqueue("José", "verde")
+pq.enqueue("Jane", "vermelho")
 pq.enqueue("Juan", "amarelo")
+pq.enqueue("Joseph", "vermelho")
+pq.enqueue("Amanda", "amarelo")
+pq.enqueue("Maitê", "verde")
 
-//  console.log(pq.peek())
